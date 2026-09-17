@@ -3,5 +3,7 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Project Path="Tests/Tests.vcxproj" />
   <Project Path="WarShips/WarShips.vcxproj" />
+  <Project Path="WarShipsLib/WarShipsLib.vcxproj" />
 </Solution>
