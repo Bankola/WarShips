@@ -99,6 +99,7 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="class_game_field_test.cpp" />
     <ClCompile Include="class_position_test.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -106,13 +107,20 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="class_ship_test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WarShipsLib\WarShipsLib.vcxproj">
-      <Project>{4fc57faa-46bf-416b-81c3-7dcb83915cf2}</Project>
+    <ProjectReference Include="..\GameFieldLib\GameFieldLib.vcxproj">
+      <Project>{9c8f4e67-b5a6-44a4-9b20-ae640c461b2c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\PositionLib\PositionLib.vcxproj">
+      <Project>{ee7b9076-f814-42fc-bed6-06a9ac969f93}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ShipLib\ShipLib.vcxproj">
+      <Project>{105512fd-cf3b-4ad2-9812-72a51f21507d}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

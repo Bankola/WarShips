@@ -1,5 +1,5 @@
 #include "pch.h"
-#include "../WarShipsLib/position.h"
+#include "../PositionLib/position.h"
 
 //TEST FOR CONSTRUCTORS
 TEST(CONSTRPositionTest, default_constructor) {
