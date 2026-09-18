@@ -3,7 +3,7 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Tests/Tests.vcxproj" />
-  <Project Path="WarShips/WarShips.vcxproj" />
-  <Project Path="WarShipsLib/WarShipsLib.vcxproj" />
+  <Project Path="Tests/Tests.vcxproj" Id="48e0b74a-515f-4eba-b9db-de9e83a95d8c" />
+  <Project Path="WarShips/WarShips.vcxproj" Id="884b246c-379d-42ae-ad39-20f048b35f36" />
+  <Project Path="WarShipsLib/WarShipsLib.vcxproj" Id="4fc57faa-46bf-416b-81c3-7dcb83915cf2" />
 </Solution>

@@ -15,12 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="war_ships_lib.cpp">
+    <ClCompile Include="position.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="war_ships_lib.h">
+    <ClInclude Include="position.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
