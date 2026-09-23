@@ -100,6 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="class_game_field_test.cpp" />
+    <ClCompile Include="class_player_test.cpp" />
     <ClCompile Include="class_position_test.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -115,6 +116,9 @@
   <ItemGroup>
     <ProjectReference Include="..\GameFieldLib\GameFieldLib.vcxproj">
       <Project>{9c8f4e67-b5a6-44a4-9b20-ae640c461b2c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\PlayerLib\PlayerLib.vcxproj">
+      <Project>{9afe5d65-b78f-42f1-8680-370d68091c3e}</Project>
     </ProjectReference>
     <ProjectReference Include="..\PositionLib\PositionLib.vcxproj">
       <Project>{ee7b9076-f814-42fc-bed6-06a9ac969f93}</Project>
