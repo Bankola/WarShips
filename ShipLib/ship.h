@@ -28,6 +28,7 @@ public:
     inline int get_row() const noexcept { return _position.row(); }
     inline int get_col() const noexcept { return _position.col(); }
     inline Direction get_direction() const noexcept { return _direction; }
+    inline Position get_position() const noexcept { return _position; }
 
     void size(int size);
     void row(int row);
