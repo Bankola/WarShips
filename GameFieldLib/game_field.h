@@ -13,7 +13,7 @@ enum State {
     Hit
 };
 
-std::string to_string(const GameField& field, bool show_ships = false); //чтобы корабли не показывались по дефолту
+
 class GameField {
 private:
     char** _field;
@@ -32,3 +32,4 @@ public:
     friend std::string to_string(const GameField& field, bool show_ships);
     friend bool is_collision(const GameField& field, const Ship& ship);
 };
+

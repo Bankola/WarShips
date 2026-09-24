@@ -120,7 +120,7 @@ State GameField::set(int row, char col) {
     return BattleshipDestroyed;
 }
 
-std::string to_string(const GameField& field, bool show_ships) {
+std::string to_string(const GameField& field, bool show_ships = false) {
     std::string res;
     res += "  |";
     for (int j = 0; j < field._m; ++j) {
