@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{884b246c-379d-42ae-ad39-20f048b35f36}</ProjectGuid>
-    <RootNamespace>WarShips</RootNamespace>
+    <ProjectGuid>{EE7B9076-F814-42FC-BED6-06A9AC969F93}</ProjectGuid>
+    <RootNamespace>WarShipsLib</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>PositionLib</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -40,13 +41,13 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v145</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -139,21 +140,10 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="position.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GameFieldLib\GameFieldLib.vcxproj">
-      <Project>{9c8f4e67-b5a6-44a4-9b20-ae640c461b2c}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\PlayerLib\PlayerLib.vcxproj">
-      <Project>{9afe5d65-b78f-42f1-8680-370d68091c3e}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\PositionLib\PositionLib.vcxproj">
-      <Project>{ee7b9076-f814-42fc-bed6-06a9ac969f93}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\ShipLib\ShipLib.vcxproj">
-      <Project>{105512fd-cf3b-4ad2-9812-72a51f21507d}</Project>
-    </ProjectReference>
+    <ClInclude Include="position.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
