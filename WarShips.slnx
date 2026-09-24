@@ -4,6 +4,7 @@
     <Platform Name="x86" />
   </Configurations>
   <Project Path="GameFieldLib/GameFieldLib.vcxproj" Id="9c8f4e67-b5a6-44a4-9b20-ae640c461b2c" />
+  <Project Path="PlayerLib/PlayerLib.vcxproj" Id="9afe5d65-b78f-42f1-8680-370d68091c3e" />
   <Project Path="PositionLib/PositionLib.vcxproj" Id="ee7b9076-f814-42fc-bed6-06a9ac969f93" />
   <Project Path="ShipLib/ShipLib.vcxproj" Id="105512fd-cf3b-4ad2-9812-72a51f21507d" />
   <Project Path="Tests/Tests.vcxproj" Id="48e0b74a-515f-4eba-b9db-de9e83a95d8c" />

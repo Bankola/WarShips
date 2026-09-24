@@ -141,6 +141,20 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GameFieldLib\GameFieldLib.vcxproj">
+      <Project>{9c8f4e67-b5a6-44a4-9b20-ae640c461b2c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\PlayerLib\PlayerLib.vcxproj">
+      <Project>{9afe5d65-b78f-42f1-8680-370d68091c3e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\PositionLib\PositionLib.vcxproj">
+      <Project>{ee7b9076-f814-42fc-bed6-06a9ac969f93}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ShipLib\ShipLib.vcxproj">
+      <Project>{105512fd-cf3b-4ad2-9812-72a51f21507d}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
