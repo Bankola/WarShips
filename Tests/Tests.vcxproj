@@ -100,6 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="class_game_field_test.cpp" />
+    <ClCompile Include="class_game_test.cpp" />
     <ClCompile Include="class_player_test.cpp" />
     <ClCompile Include="class_position_test.cpp" />
     <ClCompile Include="pch.cpp">
@@ -116,6 +117,9 @@
   <ItemGroup>
     <ProjectReference Include="..\GameFieldLib\GameFieldLib.vcxproj">
       <Project>{9c8f4e67-b5a6-44a4-9b20-ae640c461b2c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\GameLib\GameLib.vcxproj">
+      <Project>{7ea89839-1861-4f6a-8768-cfd8f97a1dc4}</Project>
     </ProjectReference>
     <ProjectReference Include="..\PlayerLib\PlayerLib.vcxproj">
       <Project>{9afe5d65-b78f-42f1-8680-370d68091c3e}</Project>
