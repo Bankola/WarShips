@@ -13,7 +13,6 @@ enum State {
     Hit
 };
 
-
 class GameField {
 private:
     char** _field;
@@ -21,6 +20,7 @@ private:
     const int _m;
 
     int check_destroy(int row, int col);
+    friend class Game;
 
 public:
     GameField();

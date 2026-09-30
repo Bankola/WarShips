@@ -11,6 +11,7 @@ private:
     int _placed_counts[4];
     int _alive_counts[4];
     static const int _max_ships_counts[4];
+    friend class Game;
 
 public:
     Player();
