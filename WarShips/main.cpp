@@ -1,8 +1,10 @@
 #include <iostream>
 #include "../GameFieldLib/game_field.h"
 #include "../ShipLib/ship.h"
+#include "../GameLib/game.h"
 
 int main() {
-	GameField g;
-	return 0;
+    Game game;
+    game.start();
+    return 0;
 }
