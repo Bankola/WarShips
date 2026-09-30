@@ -1,5 +1,10 @@
-#include "../WarShipsLib/war_ships_lib.h"
+#include <iostream>
+#include "../GameFieldLib/game_field.h"
+#include "../ShipLib/ship.h"
+#include "../GameLib/game.h"
 
 int main() {
-	return 0;
+    Game game;
+    game.start();
+    return 0;
 }

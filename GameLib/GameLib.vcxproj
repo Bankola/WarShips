@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{884b246c-379d-42ae-ad39-20f048b35f36}</ProjectGuid>
-    <RootNamespace>WarShips</RootNamespace>
+    <ProjectGuid>{7ea89839-1861-4f6a-8768-cfd8f97a1dc4}</ProjectGuid>
+    <RootNamespace>GameLib</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -40,13 +40,13 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v145</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v145</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -139,14 +139,14 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="game.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="game.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GameFieldLib\GameFieldLib.vcxproj">
       <Project>{9c8f4e67-b5a6-44a4-9b20-ae640c461b2c}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\GameLib\GameLib.vcxproj">
-      <Project>{7ea89839-1861-4f6a-8768-cfd8f97a1dc4}</Project>
     </ProjectReference>
     <ProjectReference Include="..\PlayerLib\PlayerLib.vcxproj">
       <Project>{9afe5d65-b78f-42f1-8680-370d68091c3e}</Project>
